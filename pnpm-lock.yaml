@@ -4,12 +4,12 @@ specifiers:
   '@vitejs/plugin-vue': ^4.1.0
   typescript: ^5.0.2
   vite: ^4.3.9
-  vtron: ^0.3.1
+  vtron: ^0.3.8
   vue: ^3.2.47
   vue-tsc: ^1.4.2
 
 dependencies:
-  vtron: 0.3.1
+  vtron: 0.3.8
   vue: 3.3.4
 
 devDependencies:
@@ -538,8 +538,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vtron/0.3.1:
-    resolution: {integrity: sha512-yKWolRoQWFfEPKDZE/mrgjU7p+d9cScVYEkRGr1Tf3Eql+MqRdhHsiRVs+32Amy2CBrEmMUFS/HDoYKN3uJ3PQ==}
+  /vtron/0.3.8:
+    resolution: {integrity: sha512-MNs97+0jArQfyMJBVCKbrqRz0uHwFuSYuoJkNRqb89z1F2B0Ldw9kt2yMElNagX7S0UW2NUxJ/JmvVi1nCA4UA==}
     dependencies:
       vue: 3.3.4
       vue3-sfc-loader: 0.8.4
