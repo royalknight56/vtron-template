@@ -1,25 +1,26 @@
 <script setup lang="ts">
-import { System } from 'vtron'
+import { System } from "vtron";
 import beaticon from "./assets/beat.ico";
-import HelloVue from './apps/Hello.vue';
+import HelloVue from "./apps/Hello.vue";
 const system = new System({
-    desktop: [
-        {
-            name:"Hello",
-            icon:beaticon,
-            window:{
-                title:'Hello',
-                icon:beaticon,
-                width: 800,
-                height: 600,
-                center: true,
-                content:HelloVue
-            }
-        }
-    ]
+  desktop: [
+    {
+      name: "Hello",
+      icon: beaticon,
+      window: {
+        title: "Hello",
+        icon: beaticon,
+        width: 800,
+        height: 600,
+        center: true,
+        content: HelloVue,
+      },
+    },
+  ],
 });
+
 system.whenReady().then((readySystem) => {
-    console.log(readySystem.version);
+  console.log(readySystem.version);
 });
 </script>
 
