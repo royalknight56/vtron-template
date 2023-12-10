@@ -4,12 +4,12 @@ specifiers:
   '@vitejs/plugin-vue': ^4.1.0
   typescript: ^5.0.2
   vite: ^4.3.9
-  vtron: ^0.4.2
+  vtron: ^0.5.9
   vue: ^3.2.47
   vue-tsc: ^1.4.2
 
 dependencies:
-  vtron: 0.4.2
+  vtron: 0.5.9
   vue: 3.3.4
 
 devDependencies:
@@ -423,14 +423,6 @@ packages:
   /estree-walker/2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
 
-  /fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
   /he/1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
@@ -481,7 +473,7 @@ packages:
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: r2.cnpmjs.org/fsevents/2.3.2
     dev: true
 
   /semver/7.5.1:
@@ -535,14 +527,14 @@ packages:
       postcss: 8.4.24
       rollup: 3.23.1
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: r2.cnpmjs.org/fsevents/2.3.2
     dev: true
 
-  /vtron/0.4.2:
-    resolution: {integrity: sha512-maLz8yDAPvaDmbYDep6XerAd+yX+KYkDPlGCddp8kfBVYUbJ3HLGfsiasKwyVYr65IKn6aCl4sdgQiAy4MuW6w==}
+  /vtron/0.5.9:
+    resolution: {integrity: sha512-34sn8QRhAUb86s3IdxLg3AvEjqPSnvrQK8RW+kAXbqnZu7y+Zp+yUR0S4q3VPzu11S37HY9wm1jMd/7NLlWKag==}
     dependencies:
       vue: 3.3.4
-      vue3-sfc-loader: 0.8.4
+      vue3-sfc-loader: r2.cnpmjs.org/vue3-sfc-loader/0.8.4
       xterm: 5.1.0
       xterm-addon-fit: 0.7.0_xterm@5.1.0
     dev: false
@@ -575,10 +567,6 @@ packages:
       '@vue/server-renderer': 3.3.4_vue@3.3.4
       '@vue/shared': 3.3.4
 
-  /vue3-sfc-loader/0.8.4:
-    resolution: {integrity: sha512-eziaIrk/N9f9OCpyFEkR6vMsZUHcF5mQslXjffwcb5Iq6EuU74QrlpBeJqA04MvAGT7f5O8la2v9k3NtQnJb3Q==}
-    dev: false
-
   /xterm-addon-fit/0.7.0_xterm@5.1.0:
     resolution: {integrity: sha512-tQgHGoHqRTgeROPnvmtEJywLKoC/V9eNs4bLLz7iyJr1aW/QFzRwfd3MGiJ6odJd9xEfxcW36/xRU47JkD5NKQ==}
     peerDependencies:
@@ -594,3 +582,19 @@ packages:
   /yallist/4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
     dev: true
+
+  r2.cnpmjs.org/fsevents/2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/fsevents/-/fsevents-2.3.2.tgz}
+    name: fsevents
+    version: 2.3.2
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  r2.cnpmjs.org/vue3-sfc-loader/0.8.4:
+    resolution: {integrity: sha512-eziaIrk/N9f9OCpyFEkR6vMsZUHcF5mQslXjffwcb5Iq6EuU74QrlpBeJqA04MvAGT7f5O8la2v9k3NtQnJb3Q==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/vue3-sfc-loader/-/vue3-sfc-loader-0.8.4.tgz}
+    name: vue3-sfc-loader
+    version: 0.8.4
+    dev: false
