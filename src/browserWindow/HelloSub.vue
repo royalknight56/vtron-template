@@ -1,5 +1,5 @@
 <template>
-  <div>Hello This child window</div>
+  <div>Hello This is a child window</div>
   <div>
     {{ browserWindow.config?.message }}
   </div>

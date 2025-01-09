@@ -4,7 +4,9 @@ import beaticon from "./assets/beat.ico";
 import HelloVue from "./apps/Hello.vue";
 import { VtronComputer } from "vtron";
 const system = new System({
+  /** 内置功能 */
   builtinFeature:['MyComputer','ExeOpener','BatteryTray','DataTimeTray','ImageOpener','NetworkTray','ShortCutOpener','TextOpener','UrlOpener'],
+  /** 桌面软件，添加后需要左下角点击恢复 */
   desktop: [
     {
       name: "Hello",
@@ -17,6 +19,24 @@ const system = new System({
         center: true,
         content: HelloVue,
       },
+    },
+    {
+      name: "软件组",
+      type: "group",
+      group: [
+        {
+          name: "Hello",
+          icon: beaticon,
+          window: {
+            title: "Hello",
+            icon: beaticon,
+            width: 800,
+            height: 600,
+            center: true,
+            content: HelloVue,
+          },
+        },
+      ],
     },
   ],
 });
