@@ -9,15 +9,15 @@ importers:
   .:
     dependencies:
       vtron:
-        specifier: ^0.7.7-beta.2
-        version: 0.7.7-beta.2(typescript@5.7.3)
+        specifier: ^0.7.7-beta.3
+        version: 0.7.7-beta.3(typescript@5.7.3)
       vue:
         specifier: ^3.4.33
         version: 3.5.13(typescript@5.7.3)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.0.5
-        version: 5.2.1(vite@5.4.11)(vue@3.5.13)
+        version: 5.2.1(vite@5.4.11)(vue@3.5.13(typescript@5.7.3))
       typescript:
         specifier: ^5.5.4
         version: 5.7.3
@@ -451,8 +451,8 @@ packages:
   vscode-uri@3.0.8:
     resolution: {integrity: sha512-AyFQ0EVmsOZOlAnxoFOGOq1SQDWAB7C6aqMGS23svWAllfOaxbuFvcT8D1i8z3Gyn8fraVeZNNmN6e9bxxXkKw==}
 
-  vtron@0.7.7-beta.2:
-    resolution: {integrity: sha512-dVBJrMbp9Ufg1vZTpPtirWCUkqyHLJep9C2i5LyzmreXTIt/zK5QZz6aOGgsTide1XHpiwZldcH1sFHVM0+Fbg==}
+  vtron@0.7.7-beta.3:
+    resolution: {integrity: sha512-PexQdg4yJZGq6uemspFKZ7oacn9xd1CcpOSE/nafzIPBdUU3f+EYwP2CskvHdtDOa5/2kTZCPhXqJd95GIUcTQ==}
 
   vue-accessible-color-picker@5.1.1:
     resolution: {integrity: sha512-vk+0OicECr58EnxaQ8h/MuYfzRLS7FgBGUkBVEiRy71j/XVPZ84QCwho2KsURGeoDSr16ELI1+Ao3Hqp2PPCHw==}
@@ -618,7 +618,7 @@ snapshots:
 
   '@types/estree@1.0.6': {}
 
-  '@vitejs/plugin-vue@5.2.1(vite@5.4.11)(vue@3.5.13)':
+  '@vitejs/plugin-vue@5.2.1(vite@5.4.11)(vue@3.5.13(typescript@5.7.3))':
     dependencies:
       vite: 5.4.11
       vue: 3.5.13(typescript@5.7.3)
@@ -680,6 +680,7 @@ snapshots:
       minimatch: 9.0.5
       muggle-string: 0.4.1
       path-browserify: 1.0.1
+    optionalDependencies:
       typescript: 5.7.3
 
   '@vue/reactivity@3.5.13':
@@ -698,7 +699,7 @@ snapshots:
       '@vue/shared': 3.5.13
       csstype: 3.1.3
 
-  '@vue/server-renderer@3.5.13(vue@3.5.13)':
+  '@vue/server-renderer@3.5.13(vue@3.5.13(typescript@5.7.3))':
     dependencies:
       '@vue/compiler-ssr': 3.5.13
       '@vue/shared': 3.5.13
@@ -814,14 +815,14 @@ snapshots:
 
   vscode-uri@3.0.8: {}
 
-  vtron@0.7.7-beta.2(typescript@5.7.3):
+  vtron@0.7.7-beta.3(typescript@5.7.3):
     dependencies:
       vue: 3.5.13(typescript@5.7.3)
-      vue-accessible-color-picker: 5.1.1(vue@3.5.13)
+      vue-accessible-color-picker: 5.1.1(vue@3.5.13(typescript@5.7.3))
     transitivePeerDependencies:
       - typescript
 
-  vue-accessible-color-picker@5.1.1(vue@3.5.13):
+  vue-accessible-color-picker@5.1.1(vue@3.5.13(typescript@5.7.3)):
     dependencies:
       vue: 3.5.13(typescript@5.7.3)
 
@@ -836,6 +837,7 @@ snapshots:
       '@vue/compiler-dom': 3.5.13
       '@vue/compiler-sfc': 3.5.13
       '@vue/runtime-dom': 3.5.13
-      '@vue/server-renderer': 3.5.13(vue@3.5.13)
+      '@vue/server-renderer': 3.5.13(vue@3.5.13(typescript@5.7.3))
       '@vue/shared': 3.5.13
+    optionalDependencies:
       typescript: 5.7.3
