@@ -9,7 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vtron": "^0.7.7-beta.3",
+    "vtron": "^0.7.8",
+    "vtron-plus":"0.6.8",
     "vue": "^3.4.33"
   },
   "devDependencies": {

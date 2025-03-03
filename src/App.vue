@@ -3,6 +3,8 @@ import { System } from "vtron";
 import beaticon from "./assets/beat.ico";
 import HelloVue from "./apps/Hello.vue";
 import { VtronComputer } from "vtron";
+import { vtronPlus } from "vtron-plus";
+
 const system = new System({
   /** 内置功能
    * MyComputer: 我的电脑
@@ -18,7 +20,7 @@ const system = new System({
    * Setting-Account: 账户设置
    * Setting-Personalization: 个性化设置
    */
-  builtinFeature:['MyComputer','ExeOpener','BatteryTray','DataTimeTray','ImageOpener','NetworkTray','ShortCutOpener','TextOpener','UrlOpener',"Setting-Language","Setting-Account","Setting-Personalization"],
+  builtinFeature:["MyComputer","DataTimeTray","BatteryTray","NetworkTray","ImageOpener","UrlOpener","TextOpener","ShortCutOpener","ExeOpener","Setting-Language","Setting-Account","Setting-Personalization"],
   /** 桌面软件，添加后需要左下角点击恢复 */
   desktop: [
     {
@@ -56,6 +58,7 @@ const system = new System({
 
 system.whenReady().then((readySystem) => {
   console.log(readySystem.version);
+  readySystem.use(vtronPlus())
 });
 </script>
 
