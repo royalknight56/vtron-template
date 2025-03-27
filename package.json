@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vtron": "^0.7.8",
-    "vtron-plus":"0.6.8",
+    "vtron": "^0.7.9",
+    "vtron-plus":"0.6.9",
     "vue": "^3.4.33"
   },
   "devDependencies": {

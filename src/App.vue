@@ -6,21 +6,25 @@ import { VtronComputer } from "vtron";
 import { vtronPlus } from "vtron-plus";
 
 const system = new System({
+  id:1,
   /** 内置功能
-   * MyComputer: 我的电脑
-   * ExeOpener: 可执行文件打开器
-   * BatteryTray: 电池托盘
-   * DataTimeTray: 日期时间托盘
-   * ImageOpener: 图片打开器
-   * NetworkTray: 网络托盘
-   * ShortCutOpener: 快捷方式打开器
-   * TextOpener: 文本打开器
-   * UrlOpener: 网址打开器
-   * Setting-Language: 语言设置
-   * Setting-Account: 账户设置
-   * Setting-Personalization: 个性化设置
+   *   | 'MyComputer':我的电脑
+  | 'DataTimeTray' 日期时间托盘
+  | 'BatteryTray' 电池托盘
+  | 'NetworkTray' 网络托盘
+  | 'ImageOpener' 图片打开器
+  | 'UrlOpener' 网址打开器
+  | 'TextOpener' 文本打开器
+  | 'ShortCutOpener' 快捷方式打开器
+  | 'ExeOpener'可执行文件打开器 
+  | 'Power' 开始菜单-电源
+  | 'MessageCenter' 消息中心
+  | 'Setting' 开始菜单-设置
+  | 'Setting-Language' 语言设置
+  | 'Setting-Account' 账户设置
+  | 'Setting-Personalization'; 个性化设置
    */
-  builtinFeature:["MyComputer","DataTimeTray","BatteryTray","NetworkTray","ImageOpener","UrlOpener","TextOpener","ShortCutOpener","ExeOpener","Setting-Language","Setting-Account","Setting-Personalization"],
+  builtinFeature:["MyComputer","DataTimeTray","BatteryTray","NetworkTray","ImageOpener","UrlOpener","TextOpener","ShortCutOpener","ExeOpener","Power","MessageCenter","Setting","Setting-Language","Setting-Account","Setting-Personalization"],
   /** 桌面软件，添加后需要左下角点击恢复 */
   desktop: [
     {
